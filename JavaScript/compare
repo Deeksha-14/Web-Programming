@@ -1,0 +1,39 @@
+
+<html>
+    <!--take a value from user and compare it with 200 -->
+    <head>
+        <style> 
+        
+        </style>
+        <script>
+            function compare(n1)
+            {
+                var a=parseInt(document.getElementById('n1').value);
+               
+              alert('n1');
+                if(a<200)
+                {
+                    alert("number is smaller than 200");
+                }
+                else if(a>200)
+                {
+                    document.write("number is greater than 200");
+                }
+                else  
+                alert("number is 200")
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form id="frm">
+                number 1: <input type="text" name="num1" id="n1" placeholder="Enter a number here to compare">
+                <span>*</span>
+                <button type="button" name="btn" id="com" onclick="compare()">compare</button>
+            </form>
+        </fieldset>
+        <div id="mydiv">
+
+        </div>
+    </body>
+</html>
