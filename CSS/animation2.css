@@ -1,0 +1,33 @@
+  @keyframes animation1{
+            25%{
+                background-color: aquamarine;
+                animation-delay: 2s;
+                margin-top: 60px;
+            }
+            50%{background-color: blue;
+            animation-delay: 3s;
+            }
+            75%{
+                background-color: azure;
+                animation-delay: 2s;
+            }
+            100%{
+                background-color: hotpink;
+                animation-delay: 4s;
+            }
+
+        }
+        div{
+            background-color: blueviolet;
+            animation: animation1;
+            animation-delay: 3s;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+            
+           
+
+           
+            
+
+        }
