@@ -1,4 +1,4 @@
-@keyframes animation1{
+ @keyframes animation1{
             20%{
                 background-color: red;
                 color: blue;
@@ -13,3 +13,42 @@
                 width: 300px;
                 margin-left: 50px;
                 margin-top: 200px;
+
+}
+60%{
+    background-color: yellow;
+                color: blue;
+                width: 300px;
+                margin-left: 20px;
+                margin-top: 50px;
+}
+80%{
+
+    background-color: cyan;
+                color: white;
+                width: 300px;
+                margin-left: 200px;
+                margin-top: 200px;
+}
+100%{
+    background-color: pink;
+                color: white;
+                width: 300px;
+                margin-left: 200px;
+                margin-top: 200px;
+
+}
+        }
+        div{
+            background-color: aliceblue;
+            border: 5px;
+            border-radius: 10px;
+            border-color: red;
+            width: 200px;
+            height: 100px;
+            animation: animation1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+           
+        }
