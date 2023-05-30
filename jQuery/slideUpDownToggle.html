@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../jQuery.js"></script>
+    <style>
+        div{
+            border: 2px solid red;
+            height: 230px;
+            width: 30%;
+            border-radius: 4px;
+            margin-top: 4;
+            margin-bottom: 4px;
+            color: red;
+        }
+        #div1{
+            background-color: aquamarine;
+            border-color: green;
+
+        }
+
+        #div2{
+            background-color: darkblue;
+            border-color: aquamarine;
+        }
+    </style>
+
+    <script>
+    $(document).ready(function(){
+        //show div1 and hide div2
+        $("#slideup").click(function()
+        {
+            $("#div1").slideUp(800, function()
+            {
+                $("msg").html("show completed")
+            })
+            $("#div2").slideDown(800, function(){
+                $("msg").html("hide completed")
+            })
+        })
+        $("#slidedown").click(function(){
+            $("#div2").slideUp(800, function(){
+                $("#msg").html("show completed")
+            })
+            $("#div1").slideDown(800, function(){
+                $("#msg").html("hide completed")
+            })
+
+
+        })
+        $("#slidetoggle").click(function(){
+            $("#div1").slideToggle(800, function(){
+                $("#msg").html("toggled")
+            })
+            $("#div2").slideToggle(800, function(){
+                    $("#msg").html("toggled")
+                })
+
+        })
+
+
+
+
+
+    })
+    </script>
+</head>
+<body>
+    <button type="button" name="btn1" id="slideup" value="slideup">slideup</button>
+    <button type="button" name="btn2" id="slidedown" value="slidedown">slidedown</button>
+    <button type="button" name="btn3" id="slidetoggle" value="slidetoggle">slidetoggle</button>
+    <div id="div1">here here</div>
+    <div id="div2">there there</div>
+    <p id="msg"></p>
+</body>
+</html>
