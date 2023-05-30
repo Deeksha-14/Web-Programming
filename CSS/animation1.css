@@ -1,0 +1,15 @@
+@keyframes animation1{
+            20%{
+                background-color: red;
+                color: blue;
+                width: 300px;
+                margin-left: 20px;
+
+
+            }
+            40%{
+                background-color: green;
+                color: white;
+                width: 300px;
+                margin-left: 50px;
+                margin-top: 200px;
