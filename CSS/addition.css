@@ -1,0 +1,20 @@
+form{
+    border: 2px, solid red;
+}
+input{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}
+button{
+    margin-top: 3px;
+    align-self: center;
+    margin-left: 18%;
+    color: darkblue;
+    background-color: azure;
+}
+fieldset{
+    background-color: cornsilk;
+    width: 55%;
+   
+}
