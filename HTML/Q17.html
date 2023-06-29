@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        //const PI = 3.14
+        function calculate() {
+            var r = parseInt(document.getElementById('rad').value);
+            var a = area(r);
+            var c = circumference(r);
+            document.getElementById('area').innerHTML = "Area = " + a;
+            document.getElementById('circum').innerHTML = "Circum = " + c;
+
+        }
+
+
+        function area(rad) {
+            return 3.14 * rad * rad;
+        }
+
+        function circumference(rad) {
+            return 2 * 3.14 * rad;
+        }
+    </script>
+    <title>Circle Calculate</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Circle Calculate</legend>
+        <form>
+            Enter radius : <input type="number" name="rad" id="rad" /><span>*</span><br>
+            <button type="button" name="btn" id="btn" onclick="calculate()">display</button>
+        </form>
+        <div id="area"></div>
+        <div id="circum"></div>
+    </fieldset>
+</body>
+
+</html>
